@@ -14,7 +14,7 @@ workflows:
         APP_STORE_APPLE_ID: 6758891568
         BUNDLE_ID: "com.helpweath.FrostyWeatherHelper"
         XCODE_PROJECT: "IceWeatherHelper.xcodeproj"
-        XCODE_SCHEME: "IceTripPlanner"
+        XCODE_SCHEME: "IceWeatherHelper"
     scripts:
       - name: Clean and Resolve SPM Dependencies
         script: |
