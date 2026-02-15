@@ -1,10 +1,32 @@
 import SwiftUI
+import AppTrackingTransparency
+import AppsFlyerLib
+
+
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        if #available(iOS 14, *) {
+            // AppsFlyerLib.shared().waitForATTUserAuthorization(timeoutInterval: 60)
+            ATTrackingManager.requestTrackingAuthorization { status in
+                DispatchQueue.main.async {
+                    // AppsFlyerLib.shared().start()
+                    UserDefaults.standard.set(status.rawValue, forKey: "att_status")
+                }
+            }
+        } else {
+            // AppsFlyerLib.shared().start()
+        }
+        return true
+    }
+}
 
 @main
 struct IceWeatherHelperApp: App {
     @StateObject private var dataManager = DataManager.shared
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @State private var showSplash = true
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {

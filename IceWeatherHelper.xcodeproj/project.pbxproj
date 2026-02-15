@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8FB6056B2F4218C800BDE229 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB6056A2F4218C800BDE229 /* AppsFlyerLib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8FCEEA9E2F1FF16200B844D1 /* IceWeatherHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceWeatherHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8FB6056D2F42192C00BDE229 /* Exceptions for "IceWeatherHelper" folder in "IceWeatherHelper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FCEEA9D2F1FF16200B844D1 /* IceWeatherHelper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8FCEEAA02F1FF16200B844D1 /* IceWeatherHelper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FB6056D2F42192C00BDE229 /* Exceptions for "IceWeatherHelper" folder in "IceWeatherHelper" target */,
+			);
 			path = IceWeatherHelper;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB6056B2F4218C800BDE229 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = IceWeatherHelper;
 			packageProductDependencies = (
+				8FB6056A2F4218C800BDE229 /* AppsFlyerLib */,
 			);
 			productName = IceWeatherHelper;
 			productReference = 8FCEEA9E2F1FF16200B844D1 /* IceWeatherHelper.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 8FCEEA952F1FF16200B844D1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8FB605692F4218C800BDE229 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FCEEA9F2F1FF16200B844D1 /* Products */;
 			projectDirPath = "";
@@ -249,8 +271,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IceWeatherHelper/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Frosty Weather Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use it in this application.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Frosty Weather Helper may use limited technical information from your device to support weather assistance features, improve data reliability, and maintain smooth app operation. This information is processed solely for internal quality monitoring and feature enhancement and is not used to track users across other apps, websites, or advertising platforms.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -265,7 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.00.00;
 				PRODUCT_BUNDLE_IDENTIFIER = com.helpweath.FrostyWeatherHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -289,8 +314,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IceWeatherHelper/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Frosty Weather Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use it in this application.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Frosty Weather Helper may use limited technical information from your device to support weather assistance features, improve data reliability, and maintain smooth app operation. This information is processed solely for internal quality monitoring and feature enhancement and is not used to track users across other apps, websites, or advertising platforms.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -305,7 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.00.00;
 				PRODUCT_BUNDLE_IDENTIFIER = com.helpweath.FrostyWeatherHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -341,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FB605692F4218C800BDE229 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FB6056A2F4218C800BDE229 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FB605692F4218C800BDE229 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FCEEA962F1FF16200B844D1 /* Project object */;
 }
