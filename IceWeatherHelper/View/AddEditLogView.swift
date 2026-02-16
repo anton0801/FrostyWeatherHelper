@@ -333,7 +333,6 @@ struct SelectionChip: View {
     }
 }
 
-// MARK: - Chip Selector
 struct ChipSelector<T: RawRepresentable & CaseIterable & Hashable>: View where T.RawValue == String {
     let title: String
     let options: [T]

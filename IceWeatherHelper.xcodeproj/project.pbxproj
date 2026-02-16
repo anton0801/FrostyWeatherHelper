@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8FB6056B2F4218C800BDE229 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB6056A2F4218C800BDE229 /* AppsFlyerLib */; };
+		8FB6070C2F4350FC00BDE229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB6070B2F4350FC00BDE229 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB6070C2F4350FC00BDE229 /* FirebaseMessaging in Frameworks */,
 				8FB6056B2F4218C800BDE229 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = IceWeatherHelper;
 			packageProductDependencies = (
 				8FB6056A2F4218C800BDE229 /* AppsFlyerLib */,
+				8FB6070B2F4350FC00BDE229 /* FirebaseMessaging */,
 			);
 			productName = IceWeatherHelper;
 			productReference = 8FCEEA9E2F1FF16200B844D1 /* IceWeatherHelper.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				8FB605692F4218C800BDE229 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				8FB6070A2F4350FC00BDE229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FCEEA9F2F1FF16200B844D1 /* Products */;
@@ -290,7 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 2.00.00;
+				MARKETING_VERSION = 2.01.00;
 				PRODUCT_BUNDLE_IDENTIFIER = com.helpweath.FrostyWeatherHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -333,7 +337,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 2.00.00;
+				MARKETING_VERSION = 2.01.00;
 				PRODUCT_BUNDLE_IDENTIFIER = com.helpweath.FrostyWeatherHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -379,6 +383,14 @@
 				minimumVersion = 6.17.8;
 			};
 		};
+		8FB6070A2F4350FC00BDE229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -386,6 +398,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8FB605692F4218C800BDE229 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
 			productName = AppsFlyerLib;
+		};
+		8FB6070B2F4350FC00BDE229 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FB6070A2F4350FC00BDE229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
